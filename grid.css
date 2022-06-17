@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.navLinks{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+
+.navLinkItem{
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+}
+
+.main--container{
+    width: 60vw;
+    height: 80vh;
+    margin: auto;
+}
+
+.main--grid{
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid--one{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 20px;
+}
+
+.top--left{
+    background-color: orange;
+}
+
+.top--right{
+    background-color: black;
+    
+}
+
+.grid--two{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    gap: 20px;
+}
+
+.bottom--left{
+    background-color: green;
+}
+
+.bottom--right{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.bottom--top{
+    background-color: lightskyblue;
+}
+
+.bottom--bottom{
+    background-color: lightskyblue;
+}
+
+
+
+.footer{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 375px) {
+    .main--container{
+        width: 80vw;
+    }
+
+    .main--grid, .grid--one, .grid--two, .bottom--right{
+        gap: 10px;
+    }
+}

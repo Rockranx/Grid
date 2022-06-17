@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+iframe{
+    color: hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+    color:hsl(179, 100%, 13%);
+    color: hsl(31, 77%, 52%);
+    color: hsl(184, 100%, 22%);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.navLinks{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+
+.navLinkItem{
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+}
+
+.main--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.flex--container{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    width: 60%;
+    min-height: 300px;
+
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    align-self: stretch;
+}
+
+.flexH1{
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+}
+
+.one{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 6px 0 0 6px;
+}
+
+.one .flexButton{
+    color: hsl(31, 77%, 52%);
+    border: 1px solid hsl(31, 77%, 52%);
+}
+
+.two{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.two .flexButton{
+    color: hsl(184, 100%, 22%);
+    border: 1px solid hsl(184, 100%, 22%);
+}
+
+.three{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 6px 6px 0;
+}
+
+.three .flexButton{
+    color: hsl(179, 100%, 13%);
+    border: 1px solid hsl(179, 100%, 13%);
+}
+
+.flexP{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    margin-bottom: 40px;
+    height: 120px;
+}
+
+.flexButton{
+    padding: 10px 25px;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.flexButton:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.footer{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 375px) {
+    .flex--container{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .one{
+        border-radius: 6px 6px 0 0;
+    }
+
+    .three{
+        border-radius:  0 0 6px 6px;
+    }
+}
